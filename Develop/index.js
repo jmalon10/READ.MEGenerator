@@ -32,7 +32,27 @@ inquirer
       name: 'test',
       },
   ])
-  .then((response) =>
-    console.log('Success!')
+  .then((response) => {
+    const answers = JSON.stringify(response, null, ``);
+    console.log(answers)
+  }
   );
+
+// function writeReadMe (answers)  {
+//   fs.appendFile('READ.ME', `${response.description}\n`, (err) =>  
+//     err ? console.error(err) : console.log('Description added!')
+// ),
+// fs.appendFile('READ.ME', `${response.instructions}\n`, (err) =>  
+//     err ? console.error(err) : console.log('Installation Instructions added!')
+// ),
+// fs.appendFile('READ.ME', `${response.usage}\n`, (err) =>  
+//     err ? console.error(err) : console.log('Usage Information added!')
+// ),
+// fs.appendFile('READ.ME', `${response.guidelines}\n`, (err) =>  
+//     err ? console.error(err) : console.log('Contribution Guidelines added!')
+// ),
+// fs.appendFile('READ.ME', `${response.test}\n`, (err) =>  
+//     err ? console.error(err) : console.log('Test Instructions added!')
+// )
+// };
 //---------------------------INITIALIZATOINS----------------------------------------------------------------------//
