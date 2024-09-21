@@ -48,7 +48,7 @@ inquirer
 # ${response.title}
 
 ## Description
-
+${response.description}
 ## Table of Contents 
 
 - [Installation](#installation)
@@ -59,17 +59,17 @@ inquirer
 - [Questions](#questions)
 
 ## Installation
-
+${response.instructions}
 ## Usage
-
+${response.usage}
 ## License
 
 ## Features
 
 ## Contributing
-
+${response.guidelines}
 ## Tests
-
+${response.test}
 ## Questions
 Please contact me via email for any further questions [here](mailto:${response.email})
 `
