@@ -39,6 +39,15 @@ inquirer
 
 ## Description
 
+## Table of Contents 
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+
 ## Installation
 
 ## Usage
@@ -47,10 +56,11 @@ inquirer
 
 ## Features
 
-## How to Contribute
+## Contributing
 
+## Tests
 
-## Tests`
+## Questions`
 
   fs.writeFile('README.md', readMe, (err) => 
     err ? console.error(err) : console.log('Congratulations! Your costomized professional README file is now ready!')
