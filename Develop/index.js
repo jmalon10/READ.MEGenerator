@@ -33,9 +33,11 @@ inquirer
       },
   ])
   .then((response) => {
-    const answers = JSON.stringify(response, null, ``);
-    console.log(answers)
-  }
+    JSON.stringify(response)
+     const readMe = `` // Insert README template with template literals here
+  fs.writeFile('README.md', readMe, (err) => 
+    err ? console.error(err) : console.log('Congratulations! Your costomized professional README file is now ready!')
+  )}
   );
 
 
