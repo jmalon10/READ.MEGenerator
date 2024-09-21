@@ -66,6 +66,7 @@ inquirer
 ## Tests
 
 ## Questions
+Please contact me via email for any further questions [here](${response.email})
 `
 
   fs.writeFile('README.md', readMe, (err) => 
