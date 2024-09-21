@@ -31,6 +31,11 @@ inquirer
       message: 'Please enter Test Instructions for your application:',
       name: 'test',
       },
+      {
+        type: 'input',
+        message: 'Please enter your email address:',
+        name: 'email',
+        },
   ])
   .then((response) => {
     JSON.stringify(response)
@@ -60,7 +65,8 @@ inquirer
 
 ## Tests
 
-## Questions`
+## Questions
+`
 
   fs.writeFile('README.md', readMe, (err) => 
     err ? console.error(err) : console.log('Congratulations! Your costomized professional README file is now ready!')
