@@ -31,10 +31,44 @@ inquirer
       message: 'Please enter Test Instructions for your application:',
       name: 'test',
       },
+      {
+        type: 'input',
+        message: 'Please enter your email address:',
+        name: 'email',
+        },
   ])
   .then((response) => {
     JSON.stringify(response)
-     const readMe = `` // Insert README template with template literals here
+     const readMe = `
+# <Your-Project-Title>
+
+## Description
+
+## Table of Contents 
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+
+## Installation
+
+## Usage
+
+## License
+
+## Features
+
+## Contributing
+
+## Tests
+
+## Questions
+Please contact me via email for any further questions [here](mailto:${response.email}?subject=README)
+`
+
   fs.writeFile('README.md', readMe, (err) => 
     err ? console.error(err) : console.log('Congratulations! Your costomized professional README file is now ready!')
   )}
