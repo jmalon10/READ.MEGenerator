@@ -34,7 +34,24 @@ inquirer
   ])
   .then((response) => {
     JSON.stringify(response)
-     const readMe = `` // Insert README template with template literals here
+     const readMe = `
+# <Your-Project-Title>
+
+## Description
+
+## Installation
+
+## Usage
+
+## License
+
+## Features
+
+## How to Contribute
+
+
+## Tests`
+
   fs.writeFile('README.md', readMe, (err) => 
     err ? console.error(err) : console.log('Congratulations! Your costomized professional README file is now ready!')
   )}
