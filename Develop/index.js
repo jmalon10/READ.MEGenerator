@@ -45,7 +45,7 @@ inquirer
   .then((response) => {
     JSON.stringify(response)
      const readMe = `
-# <${response.title}>
+# ${response.title}
 
 ## Description
 
