@@ -8,6 +8,11 @@ inquirer
   .prompt([
     {
       type: 'input',
+      message: 'Please enter the title of your application:',
+      name: 'title',
+    },
+    {
+      type: 'input',
       message: 'Please enter a Description of your application:',
       name: 'description',
     },
@@ -66,7 +71,7 @@ inquirer
 ## Tests
 
 ## Questions
-Please contact me via email for any further questions [here](mailto:${response.email}?subject=README)
+Please contact me via email for any further questions [here](mailto:${response.email})
 `
 
   fs.writeFile('README.md', readMe, (err) => 
