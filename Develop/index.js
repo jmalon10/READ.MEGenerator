@@ -41,6 +41,11 @@ inquirer
         message: 'Please enter your email address:',
         name: 'email',
         },
+        {
+          type: 'input',
+          message: 'Please enter your GitHub username:',
+          name: 'github',
+          },
   ])
   .then((response) => {
     JSON.stringify(response)
@@ -71,7 +76,8 @@ ${response.guidelines}
 ## Tests
 ${response.test}
 ## Questions
-Please contact me via email for any further questions [here](mailto:${response.email})
+Please contact me via email for any further questions [here](mailto:${response.email}) or find me on github [here!](https://github.com/${response.github})
+
 `
 
   fs.writeFile('README.md', readMe, (err) => 
