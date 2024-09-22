@@ -65,7 +65,7 @@ ${response.description}
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [Contributing](#contributing)
+- [How to Contribute](#how-to-contribute)
 - [Tests](#tests)
 - [Questions](#questions)
 
@@ -75,7 +75,7 @@ ${response.instructions}
 ${response.usage}
 ## License
 ${response.license}
-## Contributing
+## How to Contribute
 ${response.guidelines}
 ## Tests
 ${response.test}
