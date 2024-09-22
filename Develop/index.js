@@ -27,6 +27,12 @@ inquirer
       name: 'usage',
       }, 
     {
+      type: 'list',
+      message: 'What license did you use for this project?',
+      name: 'license',
+      choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense'],
+      },
+    {
       type: 'input',
       message: 'Please enter Contribution Guidelines for your application:',
       name: 'guidelines',
@@ -36,16 +42,16 @@ inquirer
       message: 'Please enter Test Instructions for your application:',
       name: 'test',
       },
-      {
-        type: 'input',
-        message: 'Please enter your email address:',
-        name: 'email',
-        },
-        {
-          type: 'input',
-          message: 'Please enter your GitHub username:',
-          name: 'github',
-          },
+    {
+      type: 'input',
+      message: 'Please enter your email address:',
+      name: 'email',
+      },
+    {
+      type: 'input',
+      message: 'Please enter your GitHub username:',
+      name: 'github',
+      },
   ])
   .then((response) => {
     JSON.stringify(response)
