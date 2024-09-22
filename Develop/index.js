@@ -74,9 +74,7 @@ ${response.instructions}
 ## Usage
 ${response.usage}
 ## License
-
-## Features
-
+${response.license}
 ## Contributing
 ${response.guidelines}
 ## Tests
