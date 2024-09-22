@@ -41,6 +41,11 @@ inquirer
         message: 'Please enter your email address:',
         name: 'email',
         },
+        {
+          type: 'input',
+          message: 'Please enter your GitHub username:',
+          name: 'github',
+          },
   ])
   .then((response) => {
     JSON.stringify(response)
